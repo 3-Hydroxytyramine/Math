@@ -8,10 +8,7 @@ def bisection(f,x1,x2,switch=1,tol=1.0e-9):
     if f1 == 0.0: return x1
     f2=f(x2)
     if f2 == 0.0: return x2
-    #try:
-        #if sign(f1)== sign(f2):
-    #except:
-	    #print('Корінь не в душках!')
+    
     n= int(math.ceil(math.log(abs(x2-x1)/tol)/math.log(2.0)))
 	
     for i in range(n):
